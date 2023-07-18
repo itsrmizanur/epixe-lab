@@ -1,6 +1,19 @@
+@font-face {
+    font-family: 'ageo';
+    src: url('./font/AgeoPersonalUse-Bold.woff'),
+    url('./font/AgeoPersonalUse-ExtraBold.woff'),
+    url('./font/AgeoPersonalUse-Heavy.woff'),
+    url('./font/AgeoPersonalUse-Light.woff'),
+    url('./font/AgeoPersonalUse-Medium.woff'),
+    url('./font/AgeoPersonalUse-SemiBold.woff'),
+    url('./font/AgeoPersonalUse-Thin.woff'),
+    url('./font/AgeoPersonalUse.woff');
+}
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+    font-family: 'ageo', Arial, Helvetica, sans-serif;
 }
