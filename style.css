@@ -98,7 +98,6 @@ body {
     text-align: center;
     font-size: 14px;
     font-weight: 700;
-    line-height: 28.5px; /* 203.571% */
     letter-spacing: 6.3px;
 }
 .service h3 {
@@ -106,7 +105,6 @@ body {
     text-align: center;
     font-size: 52px;
     font-weight: 700;
-    line-height: 28.5px; /* 54.808% */
     margin-top: 20px;
 }
 
@@ -124,14 +122,14 @@ body {
     margin: 0 50px;
 }
 .card img {
-    width: 75px;
+    height: 75px;
     display: block;
     margin: 30px auto;
 }
 .card h4 {
     color: #000;
     text-align: center;
-    font-size: 36px;
+    font-size: 33px;
     font-weight: 700;
 }
 .card p {
@@ -145,4 +143,119 @@ body {
 .card button {
     display: block;
     margin: 0 auto;
+}
+
+
+
+
+
+/* For Mobile Phone */
+@media screen and (min-width: 576px) and (max-width:1580px) {
+    body {
+    margin: 0 30px;
+    }
+    /* Nav-bar-style starts */
+    .nav-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .nav-menus a {
+        margin: 0;
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    /* Hero Section */
+
+    .hero-section {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .hero-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .hero-text h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .hero-text p {
+        font-size: 23px;
+        text-align: center;
+    }
+    .hero-btn {
+        justify-content: center;
+    }
+
+    /*service Section */
+    .service {
+        margin-top: 50px;
+    }
+    .service-cards {
+        margin: 0;
+    }
+    .card {
+        border-radius: 28px;
+        padding: 20px 10px;
+        margin: 20px 10px;
+    }
+    .card h4 {
+        font-size: 24px;
+    }
+    .card p {
+        font-size: 18px;
+    }
+}
+
+/* For Medium Screen */ 
+@media screen and (max-width: 576px) {
+    body {
+    margin: 0 30px;
+    }
+    /* Nav-bar-style starts */
+    .nav-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .nav-menus a {
+        margin: 0;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Hero Section */
+
+    .hero-section {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .hero-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .hero-text h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .hero-text p {
+        font-size: 23px;
+        text-align: center;
+    }
+    .hero-btn {
+        justify-content: center;
+    }
+
+    /*service Section */
+    .service {
+        margin-top: 50px;
+    }
+    .service-cards {
+        flex-direction: column;
+        margin: 50px 0;
+    }
+    .card {
+        border-radius: 28px;
+        padding: 20px 10px;
+        margin: 20px 10px;
+    }
 }
